@@ -1,17 +1,15 @@
----
-title: "Lab 02 - Plastic waste"
-author: Ben Waggener
-date: 01/21/2025
-output: github_document
----
+Lab 02 - Plastic waste
+================
+Ben Waggener
+01/21/2025
 
 ## Load packages and data
 
-```{r load-packages, message=FALSE}
+``` r
 library(tidyverse) 
 ```
 
-```{r load-data, message=FALSE}
+``` r
 plastic_waste <- read.csv("data/plastic-waste.csv")
 ```
 
@@ -21,13 +19,13 @@ plastic_waste <- read.csv("data/plastic-waste.csv")
 
 Remove this text, and add your answer for Exercise 1 here.
 
-```{r plastic-waste-continent}
+``` r
 # insert code here
 ```
 
 ### Exercise 2
 
-```{r plastic-waste-density}
+``` r
 # insert code here
 ```
 
@@ -35,7 +33,7 @@ Remove this text, and add your answer for Exercise 1 here.
 
 Remove this text, and add your answer for Exercise 3 here.
 
-```{r plastic-waste-violin}
+``` r
 # insert code here
 ```
 
@@ -43,19 +41,19 @@ Remove this text, and add your answer for Exercise 3 here.
 
 Remove this text, and add your answer for Exercise 4 here.
 
-```{r plastic-waste-mismanaged}
+``` r
 # insert code here
 ```
 
-```{r plastic-waste-mismanaged-continent}
+``` r
 # insert code here
 ```
 
-```{r plastic-waste-population-total}
+``` r
 # insert code here
 ```
 
-```{r plastic-waste-population-coastal}
+``` r
 # insert code here
 ```
 
@@ -63,8 +61,6 @@ Remove this text, and add your answer for Exercise 4 here.
 
 Remove this text, and add your answer for Exercise 5 here.
 
-```{r recreate-viz}
+``` r
 # insert code here
 ```
-
-
