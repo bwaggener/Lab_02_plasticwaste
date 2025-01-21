@@ -47,6 +47,20 @@ ggplot(
 
 ```
 
+
+```{r}
+ggplot(
+  data = plastic_waste,
+  mapping = aes(
+    x = plastic_waste_per_cap,
+    color = continent,
+    fill = continent
+  )
+) +
+  geom_density(alpha = 0.7)
+```
+This graph is similar but has all the continents filled in.
+
 ### Exercise 2
 
 ```{r plastic-waste-density}

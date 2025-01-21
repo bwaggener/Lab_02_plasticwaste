@@ -67,6 +67,24 @@ ggplot(
 
 ![](lab-02_files/figure-gfm/desnsityplotbycontinent-1.png)<!-- -->
 
+``` r
+ggplot(
+  data = plastic_waste,
+  mapping = aes(
+    x = plastic_waste_per_cap,
+    color = continent,
+    fill = continent
+  )
+) +
+  geom_density(alpha = 0.7)
+```
+
+    ## Warning: Removed 51 rows containing non-finite outside the scale range
+    ## (`stat_density()`).
+
+![](lab-02_files/figure-gfm/unnamed-chunk-1-1.png)<!-- --> This graph is
+similar but has all the continents filled in.
+
 ### Exercise 2
 
 ``` r
