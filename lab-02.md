@@ -20,7 +20,7 @@ plastic_waste <- read.csv("data/plastic-waste.csv")
 Remove this text, and add your answer for Exercise 1 here.
 
 ``` r
-# insert code here
+plastic_waste <- read.csv("data/plastic-waste.csv")
 ```
 
 ### Exercise 2
