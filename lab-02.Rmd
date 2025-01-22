@@ -178,7 +178,7 @@ ggplot(
   data = plastic_waste,
   mapping = aes (
     x = plastic_waste_per_cap,
-    y = coastal_pop)
+    y = total_pop)
   ) +
   geom_point (aes(color = continent))
 
@@ -187,8 +187,16 @@ ggplot(
 This graph visualizes the relationship between plastic waste per capita and costal population.
 
 ```{r plastic-waste-population-coastal}
-# insert code here
+ggplot(
+  data = plastic_waste,
+  mapping = aes (
+    x = plastic_waste_per_cap,
+    y = coastal_pop)
+  ) +
+  geom_point (aes(color = continent))
 ```
+
+Honestly, neither of these graphs appear much more linear than the other. The first is more clustered near the bottom left of the graph but other than a positive correlation and some outliers, there is not a lot to say about these graphs.
 
 ### Exercise 5
 

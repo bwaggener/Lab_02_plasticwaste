@@ -245,12 +245,12 @@ ggplot(
   data = plastic_waste,
   mapping = aes (
     x = plastic_waste_per_cap,
-    y = coastal_pop)
+    y = total_pop)
   ) +
   geom_point (aes(color = continent))
 ```
 
-    ## Warning: Removed 51 rows containing missing values or values outside the scale range
+    ## Warning: Removed 61 rows containing missing values or values outside the scale range
     ## (`geom_point()`).
 
 ![](lab-02_files/figure-gfm/plastic-waste-population-total-1.png)<!-- -->
@@ -259,8 +259,24 @@ This graph visualizes the relationship between plastic waste per capita
 and costal population.
 
 ``` r
-# insert code here
+ggplot(
+  data = plastic_waste,
+  mapping = aes (
+    x = plastic_waste_per_cap,
+    y = coastal_pop)
+  ) +
+  geom_point (aes(color = continent))
 ```
+
+    ## Warning: Removed 51 rows containing missing values or values outside the scale range
+    ## (`geom_point()`).
+
+![](lab-02_files/figure-gfm/plastic-waste-population-coastal-1.png)<!-- -->
+
+Honestly, neither of these graphs appear much more linear than the
+other. The first is more clustered near the bottom left of the graph but
+other than a positive correlation and some outliers, there is not a lot
+to say about these graphs.
 
 ### Exercise 5
 
