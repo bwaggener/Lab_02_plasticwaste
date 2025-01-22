@@ -142,8 +142,17 @@ ggplot(
 
 Remove this text, and add your answer for Exercise 4 here.
 
+"4.1. Visualize the relationship between plastic waste per capital and mismanaged plastic waste per capita using a scatterplot. Describe the relationship."
+
 ```{r plastic-waste-mismanaged}
-# insert code here
+ggplot(
+  data = plastic_waste,
+  mapping = aes(
+    x = continent,
+    y = plastic_waste_per_cap)
+  ) +
+  geom_point()
+  
 ```
 
 ```{r plastic-waste-mismanaged-continent}
