@@ -169,9 +169,22 @@ ggplot(
   geom_point(aes(color = continent))
 ```
 
+"4.3. Visualize the relationship between plastic waste per capita and total population as well as plastic waste per capita and coastal population. You will need to make two separate plots. Do either of these pairs of variables appear to be more strongly linearly associated?"
+
+This graph visualizes the relationship between plastic waste per capita and total population. 
+
 ```{r plastic-waste-population-total}
-# insert code here
+ggplot(
+  data = plastic_waste,
+  mapping = aes (
+    x = plastic_waste_per_cap,
+    y = coastal_pop)
+  ) +
+  geom_point (aes(color = continent))
+
 ```
+
+This graph visualizes the relationship between plastic waste per capita and costal population.
 
 ```{r plastic-waste-population-coastal}
 # insert code here
