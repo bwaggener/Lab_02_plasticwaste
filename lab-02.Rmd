@@ -142,14 +142,16 @@ ggplot(
 
 Remove this text, and add your answer for Exercise 4 here.
 
-"4.1. Visualize the relationship between plastic waste per capital and mismanaged plastic waste per capita using a scatterplot. Describe the relationship."
+"4.1. Visualize the relationship between plastic waste per capita and mismanaged plastic waste per capita using a scatter plot. Describe the relationship."
+
+This plot shows the relationship between plastic waste per capita and mismanaged plastic waste per capita through a scatter plot. This relationship is generally positive however, there seems to be strict boundaries where if a country has a certain amount of plastic waste, they WILL have a minimum amount of mismanaged plastic waste. 
 
 ```{r plastic-waste-mismanaged}
 ggplot(
   data = plastic_waste,
   mapping = aes(
-    x = continent,
-    y = plastic_waste_per_cap)
+    x = plastic_waste_per_cap,
+    y = mismanaged_plastic_waste_per_cap)
   ) +
   geom_point()
   
