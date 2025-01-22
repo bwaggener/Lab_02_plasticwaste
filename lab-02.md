@@ -294,7 +294,13 @@ ggplot(
   ) +
   geom_point (aes(color = continent)) +
   
-  geom_smooth ()
+  geom_smooth (color = "black") +
+  labs(
+    title = "Plastic waste vs. coastal population proportion",
+    subtitle = "by continent",
+    x = "Coastal population proportion (Coastal / total population)", y = "Plastic waste per capita",
+    
+  )
 ```
 
     ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
