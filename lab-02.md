@@ -149,9 +149,39 @@ ggplot(
 plots. What do the violin plots reveal that box plots do not? What
 features are apparent in the box plots but not in the violin plots?”
 
+Here is the side-by-side box plots as violin plots. The violin plots
+show the distribution of data better. The violin plots make the
+differences in data distribution (especially the shape near the mean)
+easier to see compared to the box plots.
+
 ``` r
-# insert code here
+ggplot(
+  data = plastic_waste,
+  mapping = aes(
+    x = continent,
+    y = plastic_waste_per_cap
+  )
+) +
+  geom_violin(
+    mapping = NULL,
+  data = NULL,
+  stat = "ydensity",
+  position = "dodge",
+  draw_quantiles = NULL,
+  trim = TRUE,
+  bounds = c(-Inf, Inf),
+  scale = "area",
+  na.rm = FALSE,
+  orientation = NA,
+  show.legend = NA,
+  inherit.aes = TRUE
+  )
 ```
+
+    ## Warning: Removed 51 rows containing non-finite outside the scale range
+    ## (`stat_ydensity()`).
+
+![](lab-02_files/figure-gfm/plastic-waste-violin-1.png)<!-- -->
 
 ### Exercise 4
 
