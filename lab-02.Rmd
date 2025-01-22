@@ -203,7 +203,15 @@ Honestly, neither of these graphs appear much more linear than the other. The fi
 Remove this text, and add your answer for Exercise 5 here.
 
 ```{r recreate-viz}
-# insert code here
+ggplot(
+  data = plastic_waste,
+  mapping = aes (
+    x = (coastal_pop / total_pop),
+    y = plastic_waste_per_cap)
+  ) +
+  geom_point (aes(color = continent)) +
+  geom_smooth ()
+
 ```
 
 
