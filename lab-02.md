@@ -94,6 +94,8 @@ ggplot(
 level that works better for displaying the density curves for all
 continents.”
 
+Here is a density plot with a lower alpha to better display the data.
+
 ``` r
 ggplot(
   data = plastic_waste,
@@ -115,26 +117,37 @@ ggplot(
 aesthetics of the plot but we defined the alpha level as a
 characteristic of the plotting geom.”
 
-‘aes’ is used to communicate to R what data to use whereas ‘geom’ says
-how to display that data. In the graph above, the x axis displays
-plastic waste per capita while color and fill display continent. These
-are under the ‘aes’ function in R. Alpha refers to the color
-transparency which is a quality of the data visualization rather than
-identifying the data itself.
+My answer: ‘aes’ is used to communicate to R what data to use whereas
+‘geom’ says how to display that data. In the graph above, the x axis
+displays plastic waste per capita while color and fill display
+continent. These are under the ‘aes’ function in R. Alpha refers to the
+color transparency which is a quality of the data visualization rather
+than identifying the data itself.
 
-🧶 ✅ ⬆️ Now is a good time to knit your document and commit and push
-your changes to GitHub with an appropriate commit message. Make sure to
-commit and push all changed files so that your Git pane is cleared up
-afterwards.
+“And yet another way to visualize this relationship is using
+side-by-side box plots.”
 
-And yet another way to visualize this relationship is using side-by-side
-box plots.”
+``` r
+ggplot(
+  data = plastic_waste,
+  mapping = aes(
+    x = continent,
+    y = plastic_waste_per_cap
+  )
+) +
+  geom_boxplot()
+```
 
-Here is a density plot with a lower alpha to better display the data.
+    ## Warning: Removed 51 rows containing non-finite outside the scale range
+    ## (`stat_boxplot()`).
+
+![](lab-02_files/figure-gfm/sidebysideboxplots-1.png)<!-- -->
 
 ### Exercise 3
 
-Remove this text, and add your answer for Exercise 3 here.
+“Convert your side-by-side box plots from the previous task to violin
+plots. What do the violin plots reveal that box plots do not? What
+features are apparent in the box plots but not in the violin plots?”
 
 ``` r
 # insert code here
