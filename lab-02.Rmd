@@ -19,7 +19,7 @@ plastic_waste <- read.csv("data/plastic-waste.csv")
 
 ### Exercise 1
 
-Here is the plastic-waste-continent data plotted as a frequency graph 
+Here is the plastic-waste-continent data plotted as a frequency graph. This is data from 2010. 
 
 ```{r plastic-waste-continent}
 ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
@@ -27,13 +27,15 @@ ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
 ```
 
 Here is the dataset filtered so that it only shows countries with plastic waste per capita that is greater than 3.5kg per person
+
 ```{r filtered_plasticwastecontinent}
 
 plastic_waste %>%
   filter(plastic_waste_per_cap > 3.5)
 ```
-This shows that the outlier from the previous graph is Trinidad and Tobago. This means that this country has a much higher rate of plastic waste per capita compared to the other countries in this dataset. Quickly looking online, it seems that this is not a "data error" and that much of this is caused by "inadequate waste management" (according to Forbes)
+This shows that the outlier from the previous graph is Trinidad and Tobago. This means that this country has a much higher rate of plastic waste per capita compared to the other countries in this dataset. Quickly looking online, it seems that this is not a "data error" and that much of this is caused by "inadequate waste management" (according to Forbes).
 
+1.1
 
 Below shows each continent as a density plot.
 
@@ -63,14 +65,14 @@ ggplot(
 ) +
   geom_density(alpha = 0.7)
 ```
-
+Most of the data is clustered around (0,0) but there are serveral humps from South America, north America, and Europe between .5 and .75 on the x axis (at least i think so, i am colorblind). This graph also shows the outlier, likely Trinidad and Tobago.
 
 ### Exercise 2
 
 
 "2.1. Recreate the density plots above using a different (lower) alpha level that works better for displaying the density curves for all continents."
 
-Here is a density plot with a lower alpha to better display the data.
+Here is a density plot with a lower alpha (at .25) to better display the data.
 
 
 ```{r plastic-waste-density}
