@@ -90,7 +90,9 @@ ggplot(
 
 ### Exercise 2
 
-Here is a density plot with a lower alpha to better display the data.
+“2.1. Recreate the density plots above using a different (lower) alpha
+level that works better for displaying the density curves for all
+continents.”
 
 ``` r
 ggplot(
@@ -108,6 +110,27 @@ ggplot(
     ## (`stat_density()`).
 
 ![](lab-02_files/figure-gfm/plastic-waste-density-1.png)<!-- -->
+
+“2.2. Explain why we defined the color and fill of the curves by mapping
+aesthetics of the plot but we defined the alpha level as a
+characteristic of the plotting geom.”
+
+‘aes’ is used to communicate to R what data to use whereas ‘geom’ says
+how to display that data. In the graph above, the x axis displays
+plastic waste per capita while color and fill display continent. These
+are under the ‘aes’ function in R. Alpha refers to the color
+transparency which is a quality of the data visualization rather than
+identifying the data itself.
+
+🧶 ✅ ⬆️ Now is a good time to knit your document and commit and push
+your changes to GitHub with an appropriate commit message. Make sure to
+commit and push all changed files so that your Git pane is cleared up
+afterwards.
+
+And yet another way to visualize this relationship is using side-by-side
+box plots.”
+
+Here is a density plot with a lower alpha to better display the data.
 
 ### Exercise 3
 
