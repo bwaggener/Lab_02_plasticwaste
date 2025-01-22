@@ -34,6 +34,9 @@ plastic_waste %>%
 ```
 This shows that the outlier from the previous graph is Trinidad and Tobago. This means that this country has a much higher rate of plastic waste per capita compared to the other countries in this dataset. Quickly looking online, it seems that this is not a "data error" and that much of this is caused by "inadequate waste management" (according to Forbes)
 
+
+Below shows each continent as a density plot.
+
 ```{r desnsityplotbycontinent}
 
 ggplot(
@@ -47,6 +50,7 @@ ggplot(
 
 ```
 
+This graph is similar but has all the continents filled in.
 
 ```{r}
 ggplot(
@@ -59,7 +63,7 @@ ggplot(
 ) +
   geom_density(alpha = 0.7)
 ```
-This graph is similar but has all the continents filled in.
+
 
 ### Exercise 2
 

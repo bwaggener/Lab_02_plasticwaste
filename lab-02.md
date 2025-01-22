@@ -51,6 +51,8 @@ Quickly looking online, it seems that this is not a “data error” and
 that much of this is caused by “inadequate waste management” (according
 to Forbes)
 
+Below shows each continent as a density plot.
+
 ``` r
 ggplot(
   data = plastic_waste,
@@ -67,6 +69,8 @@ ggplot(
 
 ![](lab-02_files/figure-gfm/desnsityplotbycontinent-1.png)<!-- -->
 
+This graph is similar but has all the continents filled in.
+
 ``` r
 ggplot(
   data = plastic_waste,
@@ -82,8 +86,7 @@ ggplot(
     ## Warning: Removed 51 rows containing non-finite outside the scale range
     ## (`stat_density()`).
 
-![](lab-02_files/figure-gfm/unnamed-chunk-1-1.png)<!-- --> This graph is
-similar but has all the continents filled in.
+![](lab-02_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 ### Exercise 2
 
