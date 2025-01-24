@@ -17,7 +17,8 @@ plastic_waste <- read.csv("data/plastic-waste.csv")
 
 ### Exercise 1
 
-Here is the plastic-waste-continent data plotted as a frequency graph
+Here is the plastic-waste-continent data plotted as a frequency graph.
+This is data from 2010.
 
 ``` r
 ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
@@ -45,11 +46,13 @@ plastic_waste %>%
     ## 1   1341465
 
 This shows that the outlier from the previous graph is Trinidad and
-Tobago. This means that this country has a much higher rate of plastic
-waste per capita compared to the other countries in this dataset.
-Quickly looking online, it seems that this is not a “data error” and
-that much of this is caused by “inadequate waste management” (according
-to Forbes)
+Tobago. This means that this country has a much much higher rate of
+plastic waste per capita compared to the other countries in this
+dataset. Quickly looking online, Trinidad and Tobago is known to have
+issues with waste management however, this is a very extreme outlier so
+I feel like it might be an error.
+
+1.1
 
 Below shows each continent as a density plot.
 
@@ -86,7 +89,11 @@ ggplot(
     ## Warning: Removed 51 rows containing non-finite outside the scale range
     ## (`stat_density()`).
 
-![](lab-02_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](lab-02_files/figure-gfm/unnamed-chunk-1-1.png)<!-- --> Most of the
+data is clustered around (0,0) but there are serveral humps from South
+America, north America, and Europe between .5 and .75 on the x axis (at
+least i think so, i am colorblind). This graph also shows the outlier,
+likely Trinidad and Tobago.
 
 ### Exercise 2
 
@@ -94,7 +101,8 @@ ggplot(
 level that works better for displaying the density curves for all
 continents.”
 
-Here is a density plot with a lower alpha to better display the data.
+Here is a density plot with a lower alpha (at .25) to better display the
+data.
 
 ``` r
 ggplot(
@@ -280,7 +288,10 @@ to say about these graphs.
 
 ### Exercise 5
 
-Remove this text, and add your answer for Exercise 5 here.
+The graph below (which removed one country with waste per capita over
+3kg/day) shows that there is a positive trend between coastal population
+proportion and plastic waste per capita until the coastal population
+proportion reaches around 1.
 
 ``` r
 filtered_plastic_waste <- plastic_waste %>%
